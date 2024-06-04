@@ -45,12 +45,7 @@ const Header = () => {
                      </Link>
                 ))
             }
-          <Link
-            to="/favorites"
-            className="px-4 py-2 hover:gradient border-b-4 hidden lg:block"
-          >
-            Reactions
-          </Link>
+          
           <button onClick={() => setShowCategory(!showCategory)}>
             <HiEllipsisVertical
               size={43}
