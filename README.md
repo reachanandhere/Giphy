@@ -1,0 +1,1 @@
+This is a GIPHY Clone built with React 18, Giphy API and Tailwind!
