@@ -8,7 +8,7 @@ const GifProvider = ({ children }) => {
   const [filter, setFilter] = React.useState("gifs");
   const [favorites, setFavorites] = React.useState([]);
   const gif = new GiphyFetch(import.meta.env.VITE_GIPHY_KEY);
-  console.log(gif)
+  //console.log(gif)
 
   return (
     <GifContext.Provider value={{ gif, gifs, setGifs, filter, setFilter, favorites, setFavorites }}>
