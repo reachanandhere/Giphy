@@ -6,4 +6,12 @@
   .gradient {
     @apply bg-gradient-to-r from-teal-600 via-blue-600 to-pink-500;
   }
+
+  .faded-text {
+    @apply font-bold text-gray-500
+  }
+
+  .divider {
+    @apply w-full h-0.5 bg-gray-800 my-6
+  }
 }

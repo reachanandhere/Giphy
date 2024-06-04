@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HiEllipsisVertical, HiMiniBars3BottomRight } from "react-icons/hi2";
 import { GifState } from "../context/gifcontext";
 import GifSearch from "./git-search";
+import logo from "../../public/logo.svg";
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -24,7 +25,7 @@ const Header = () => {
     <nav>
       <div className="relative flex gap-4 justify-between items-center mb-2">
         <Link to="/" className="gap-2 flex">
-          <img src="./logo.svg" className="w-8" alt="Logo" />
+          <img src={logo} className="w-8" alt="Logo" />
           <h1 className="tracking-tight text-5xl font-bold cursor-pointer">
             GIPHY
           </h1>
