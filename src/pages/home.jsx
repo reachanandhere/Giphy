@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { GifState } from "../context/gifcontext";
+import Gif from "../components/gif";
 
 const Home = () => {
   const { gif, gifs, setGif, setGifs, filter } = GifState();
@@ -7,7 +8,7 @@ const Home = () => {
   const fetchTrendingGifs = async () => {
     const { data } = await gif.trending({
       type: filter,
-      limit: 10,
+      limit: 30,
       rating: "g",
     });
     setGifs(data);
@@ -19,6 +20,13 @@ const Home = () => {
 
   return <div>
         <img src="./banner.gif" alt="Earth banner" className="mt-2 rounded w-full"/> 
+
+        <div className="columns-2 md:columns-3 lg:columns-4 xl:columns-5">
+            {gifs.map((gif) => (
+             <Gif gif={gif} key={gif.title} />  
+            ))}
+        </div>
+
   </div>;
 };
 
