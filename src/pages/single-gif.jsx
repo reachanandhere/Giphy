@@ -208,9 +208,9 @@ const SingleGif = () => {
               </div>
             )}
               <div className="divider"></div>
-            <button className="flex gap-6 items-center font-bold">
+            {/* <button className="flex gap-6 items-center font-bold">
               <IoCodeSharp size={30} /> Embed
-            </button>
+            </button> */}
           </div>
         </div>
 
