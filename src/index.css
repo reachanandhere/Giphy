@@ -8,10 +8,17 @@
   }
 
   .faded-text {
-    @apply font-bold text-gray-500
+    @apply font-bold text-gray-500;
   }
 
   .divider {
-    @apply w-full h-0.5 bg-gray-800 my-6
+    @apply w-full h-0.5 bg-gray-800 my-6;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
